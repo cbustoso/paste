@@ -1,10 +1,11 @@
-PRDDR	Business	vmmxbusprd_7	D8s v5
-PRDDR	Business	vmmxbusprd_8	D8s v5
-PRDDR	Business	vmmxbusprd_9	D8s v5
-PRDDR	Business	vmmxbusprd_10	D8s v5
-PRDDR	Data Base	vmmxdbrprd_2	D8s V5
-PRDDR	Data Base	vmmxdbfprd_2	D8s V5
-PRDDR	Orchestacion	vmmxorcprd_4	D16s V5
-PRDDR	Orchestacion	vmmxorcprd_5	D16s V5
-PRDDR	Web Client	vmmxwebprd_4	D16s V5
-PRDDR	Web Client	vmmxwebprd_5	D16s V5
+PRDDR	Business	vmmxbusprd7	D8s v5
+PRDDR	Business	vmmxbusprd8	D8s v5
+PRDDR	Business	vmmxbusprd9	D8s v5
+PRDDR	Business	vmmxbusprd10	D8s v5
+PRDDR	Data Base	vmmxdbrprd2	D8s V5
+PRDDR	Data Base	vmmxdbfprd_	D8s V5
+PRDDR	Orchestacion	vmmxorcprd4	D16s V5
+PRDDR	Orchestacion	vmmxorcprd5	D16s V5
+PRDDR	Web Client	vmmxwebprd4	D16s V5
+PRDDR	Web Client	vmmxwebprd5	D16s V5
+adminaz Banchile2023
