@@ -3,11 +3,10 @@ PRDDR	Business	vmmxbusprd8	D8s v5
 PRDDR	Business	vmmxbusprd9	D8s v5
 PRDDR	Business	vmmxbusprd10	D8s v5
 PRDDR	Data Base	vmmxdbrprd2	D8s V5
-PRDDR	Data Base	vmmxdbfprd_	D8s V5
+PRDDR	Data Base	vmmxdbfprd2	D8s V5
 PRDDR	Orchestacion	vmmxorcprd4	D16s V5
 PRDDR	Orchestacion	vmmxorcprd5	D16s V5
 PRDDR	Web Client	vmmxwebprd4	D16s V5
 PRDDR	Web Client	vmmxwebprd5	D16s V5
-adminaz Banchile2023
-vmmxdbfprd_1
-vmmxdbrprd_1
+vmmxdbfprd1
+vmmxdbrprd1
