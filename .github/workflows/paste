@@ -1,12 +1,18 @@
-PRDDR	Business	vmmxbusprd7	D8s v5
-PRDDR	Business	vmmxbusprd8	D8s v5
-PRDDR	Business	vmmxbusprd9	D8s v5
-PRDDR	Business	vmmxbusprd10	D8s v5
-PRDDR	Data Base	vmmxdbrprd2	D8s V5
-PRDDR	Data Base	vmmxdbfprd2	D8s V5
-PRDDR	Orchestacion	vmmxorcprd4	D16s V5
-PRDDR	Orchestacion	vmmxorcprd5	D16s V5
-PRDDR	Web Client	vmmxwebprd4	D16s V5
-PRDDR	Web Client	vmmxwebprd5	D16s V5
-vmmxdbfprd1
-vmmxdbrprd1
+Se deben crear 3 políticas con las siguientes configuraciones:
+ 
+1.	APP (Bussiness, Ochestration y Web Client)
+•	Respaldo semanal retención 4 semanas
+•	Respaldo mensual retención 3 meses
+ 
+2.	DB (Financial, DataMart y ML)
+•	Respaldo diario retención 7 días
+•	Respaldo semanal retención 4 semanas
+•	Respaldo mensual retención 12 meses
+•	Respaldo anual retención 99 años
+ 
+3.	FileShare (Logs e instalación del aplicativo)
+•	Respaldo diario retención 7 días
+•	Respaldo semanal retención 4 semanas
+•	Respaldo mensual retención 12 meses
+•	Respaldo anual retención 99 años
+ 
