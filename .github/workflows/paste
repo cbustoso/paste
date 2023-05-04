@@ -13,17 +13,13 @@
 		java Dte
 		
 		
-import java.time.ZonedDateTime;
 
+import java.time.ZonedDateTime;
+ 
 public class Main {
     public static void main(String[] args) {
-      
-        System.out.println(ZonedDateTime.now());
-      
-       System.out.println("Get current timezone "+ZonedDateTime.now().getZone());
-        
-        System.out.println("Get time of different timezone: "+ZonedDateTime.now(ZoneId.of("America/New_York")));
-
-
+        ZonedDateTime datetime = ZonedDateTime.now();
+ 
+        System.out.println(datetime);        // 2017-12-24T11:34:27.502430Z[Etc/UTC]
     }
 }
