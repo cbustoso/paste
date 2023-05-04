@@ -1,3 +1,5 @@
+	Dte.java
+	
 	import java.util.Date;
 	public class Dte {
 	    public static void main(String[] args) {
@@ -5,3 +7,7 @@
 	        System.out.println(date.toString());
 	    }
 	}
+
+
+		javac Dte.java
+		java Dte
