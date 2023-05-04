@@ -1,18 +1,9 @@
-Se deben crear 3 políticas con las siguientes configuraciones:
- 
-1.	APP (Bussiness, Ochestration y Web Client)
-•	Respaldo semanal retención 4 semanas
-•	Respaldo mensual retención 3 meses
- 
-2.	DB (Financial, DataMart y ML)
-•	Respaldo diario retención 7 días
-•	Respaldo semanal retención 4 semanas
-•	Respaldo mensual retención 12 meses
-•	Respaldo anual retención 99 años
- 
-3.	FileShare (Logs e instalación del aplicativo)
-•	Respaldo diario retención 7 días
-•	Respaldo semanal retención 4 semanas
-•	Respaldo mensual retención 12 meses
-•	Respaldo anual retención 99 años
- 
+
+az account set --subscription 53320c70-6583-4dfa-a954-70b50ce3b912
+
+New-AzPrivateDnsRecordSet -Name bbddf -RecordType A -ZoneName azrprdeastus01.banchile.cl `
+   -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 `
+   -Ttl 3600 `
+   -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -IPv4Address "10.222.88.69")
+   
+   
