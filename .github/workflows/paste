@@ -1,9 +1,7 @@
-
-az account set --subscription 53320c70-6583-4dfa-a954-70b50ce3b912
-
-New-AzPrivateDnsRecordSet -Name bbddf -RecordType A -ZoneName azrprdeastus01.banchile.cl `
-   -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 `
-   -Ttl 3600 `
-   -PrivateDnsRecords (New-AzPrivateDnsRecordConfig -IPv4Address "10.222.88.69")
-   
-   
+	import java.util.Date;
+	public class Dte {
+	    public static void main(String[] args) {
+	        Date date = new Date();
+	        System.out.println(date.toString());
+	    }
+	}
