@@ -5,6 +5,8 @@ $RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-ea
 Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.70
 Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.68
 Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07" -Force
+Start-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 
  ===========================================BBDDR==========================================================================  
 $RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name bbddr -RecordType A
