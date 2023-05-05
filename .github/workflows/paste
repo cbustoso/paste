@@ -93,3 +93,26 @@ Start-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
 Get-AzLoadBalancer -Name agw-azr-murex-prd-eastus-01 -ResourceGroupName rg-azr-murex-prd-eastus-01 | Remove-AzLoadBalancerBackendAddressPoolConfig -Name pool-lb-azr-web-01
 Get-AzLoadBalancer -Name agw-azr-murex-prd-eastus-01 -ResourceGroupName rg-azr-murex-prd-eastus-01 | Add-AzLoadBalancerBackendAddressPoolConfig -Name pool-lb-azr-web-02 | Set-AzLoadBalancer
 
+
+=================================================Start-WestUS====================================================================
+
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd7
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd8
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd9
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd10
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxorcprd4
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxorcprd5
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxwebprd4
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxwebprd5
+
+
+=================================================Stop-WestUS====================================================================
+
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd8
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd7
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd9
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxbusprd10
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxorcprd4
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxorcprd5
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxwebprd4
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-westus-01 -Name vmmxwebprd5
