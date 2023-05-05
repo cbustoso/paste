@@ -1,3 +1,95 @@
+
+   
+ ===========================================BBDDF==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name bbddf -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.70
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.68
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxdbfprd0 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxdbfprd1
+
+ ===========================================BBDDR==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name bbddr -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.71
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.69
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxdbrprd0 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxdbrfprd1
+
+ ===========================================WEB==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name webclient -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.198
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.199
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.196
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.197
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxwebprd0 -Force
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxwebprd1 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxwebprd2
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxwebprd3
+
+ ===========================================Bussiness0==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name business0-prd-east-01 -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.15
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.4
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd0 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd4
+
+
+ ===========================================Bussiness1==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name business1-prd-east-01 -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.16
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.5
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd1 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd5
+
+ ===========================================Bussiness2==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name business2-prd-east-01 -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.8
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.20
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd2 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd6
+
+ ===========================================Orchestation0==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name orchestation-prd-east-01 -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.13
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.12
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxorcprd0 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxorcprd1
+
+
+ ===========================================Orchestation1==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name orchestation-prd-east-01 -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.18
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.13
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxorcprd1 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxorcprd2
+
+
+ ===========================================Orchestation2==========================================================================  
+$RecordSet = Get-AzPrivateDnsRecordSet -ResourceGroupName rg-azr-corp-prd-hub-eastus-01 -ZoneName azrprdeastus01.banchile.cl -Name orchestation-prd-east-01 -RecordType A
+Add-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.19
+Remove-AzPrivateDnsRecordConfig -RecordSet $RecordSet -Ipv4Address 10.222.24.18
+Set-AzPrivateDnsRecordSet -RecordSet $RecordSet
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxorcprd2 -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxorcprd3
+
+
+
+
+=====================================================================================================
+
+Stop-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name pueba-prd-lb -Force
+Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name pueba-prd-lb
+Start-AzVM -ResourceGroupName "ResourceGroup11" -Name "VirtualMachine07"
+
+
 =================================================loadbalancer====================================================================
-Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "MyResourceGroup" | Remove-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02"
-Get-AzLoadBalancer -Name "MyLoadBalancer" -ResourceGroupName "myrg" | Add-AzLoadBalancerBackendAddressPoolConfig -Name "BackendAddressPool02" | Set-AzLoadBalancer
+Get-AzLoadBalancer -Name agw-azr-murex-prd-eastus-01 -ResourceGroupName rg-azr-murex-prd-eastus-01 | Remove-AzLoadBalancerBackendAddressPoolConfig -Name pool-lb-azr-web-01
+Get-AzLoadBalancer -Name agw-azr-murex-prd-eastus-01 -ResourceGroupName rg-azr-murex-prd-eastus-01 | Add-AzLoadBalancerBackendAddressPoolConfig -Name pool-lb-azr-web-02 | Set-AzLoadBalancer
+
