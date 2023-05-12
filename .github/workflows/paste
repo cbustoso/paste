@@ -9,3 +9,8 @@ ________________________________________________________________________________
 SAS Token stazrmx3prd02
 ?sv=2022-11-02&ss=f&srt=sco&sp=rwdlc&se=2023-05-12T18:10:15Z&st=2023-05-12T17:10:15Z&spr=https&sig=IorUTcP50H4zWFPNHHRPZ4HydjDPeKGNxPPkxYywQjY%3D
 https://stazrmx3prd02.file.core.windows.net/
+
+
+__________________________________________________________________________________________________________________________________________________
+
+azcopy sync 'https://stazrmx3prd01.file.core.windows.net/shareazmx3prd01/test?sv=2022-11-02&ss=f&srt=sco&sp=rwdlc&se=2023-05-12T18:07:08Z&st=2023-05-12T17:07:08Z&spr=https&sig=8bsuEqoCJAPjdwQTEYiVxgCXTouLnfBXLVRQLcAN6so%3D' 'https://stazrmx3prd02.file.core.windows.net/shareazmx3prd02/?sv=2022-11-02&ss=f&srt=sco&sp=rwdlc&se=2023-05-12T18:10:15Z&st=2023-05-12T17:10:15Z&spr=https&sig=IorUTcP50H4zWFPNHHRPZ4HydjDPeKGNxPPkxYywQjY%3D ' --recursive --preserve-smb-permissions=true --preserve-smb-info=true
