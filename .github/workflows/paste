@@ -59,3 +59,7 @@ Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd4
 Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxbusprd6
 
 Start-AzVM -ResourceGroupName rg-azr-murex-prd-eastus-01 -Name vmmxorcprd1
+
+
+
+./azcopy sync 'https://stazrmx3prd01.file.core.windows.net/shareazrmx3prd01/test?sv=2022-11-02&ss=f&srt=sco&sp=rwdlc&se=2023-05-19T04:44:30Z&st=2023-05-18T20:44:30Z&spr=https&sig=ihMGOUOgu71H6gvBky8IGyGUdn5BA92TnS%2BnsQEtSW0%3D' 'https://stazrmx3prd02.file.core.windows.net/shareazrmx3prd02/test?sv=2022-11-02&ss=f&srt=co&sp=rwdlc&se=2023-05-19T04:45:28Z&st=2023-05-18T20:45:28Z&spr=https&sig=oF6bo%2FgYQAaPOMND4nrKx3OSGupbzpHJ%2BDBqYgolmzc%3D' --recursive --preserve-smb-permissions=true --preserve-smb-info=true
